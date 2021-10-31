@@ -40,7 +40,7 @@ a {
 .menu {
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 20px;
   width: 30px;
   display: none;
 }
@@ -68,6 +68,7 @@ main {
   margin-bottom: 3rem;
   box-shadow: 0px 2px 6px var(--highlight-color),
     0px -2px 6px var(--highlight-color);
+  padding: 1rem;
 }
 .double-container {
   display: flex;
@@ -109,6 +110,10 @@ main {
   color: var(--text-color);
   text-shadow: -1px 2px black;
   font-size: 0.8rem;
+  filter: sepia(1);
+}
+.to-top-icon {
+  float: right;
 }
 
 /* Footer */
@@ -144,15 +149,19 @@ span {
   background-image: url("/images/banner.jpg");
   margin-bottom: 3rem;
   border-radius: 30px;
+  filter: sepia(0.3);
 }
 .bedroom-img {
   background-image: url("/images/bedroom.jpg");
+  filter: sepia(0.3);
 }
 .lounge-img {
   background-image: url("/images/lounge.jpg");
+  filter: sepia(0.3);
 }
 .kitchen-img {
   background-image: url("/images/kitchen.jpg");
+  filter: sepia(0.3);
 }
 .category {
   width: 30%;
@@ -202,6 +211,7 @@ h1 {
   .collection-link {
     border: none;
     border-radius: 0;
+    text-align: center;
   }
   .menu {
     display: block;
@@ -226,5 +236,9 @@ h1 {
   header li a {
     color: var(--text-color);
     text-transform: uppercase;
+  }
+  .logo {
+    margin-top: 92px;
+    margin-bottom: 5rem;
   }
 }
